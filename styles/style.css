@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf0f2;
+}
+
+
+section {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.column {
+    float: left;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 7px;
+}
+
+.daysOfWeek {
+    min-height: 30px;
+    padding: 10px;
+    text-align: right;
+    background-color: #ab9eee;
+    font-size: 1rem;
+    color: white;
+}
+
+.userInputDataSection {
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+
+.userImportDataSection {
+    float: left;
+    width: 30%;
+}
+
+h1,
+label {
+    text-align: center;
+    color: #3d474e;
+}
+
+form {
+    text-align: left;
+}
+
+input[type=text],
+input[type=number],
+textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0186ef;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    margin: 8px 0;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.emptySymbol {
+    font-size: 2rem;
+    color: white;
+    place-items: center;
+    background-color: #dee4e6;
+    color: #9aa5ad;
+    width: -webkit-fill-available;
+    height: 100%;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    height: calc(100% - 38.66px);
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+
+.row {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.grid-container.moreThenOne {
+    grid-template-columns: auto auto;
+}
+
+.grid-container.moreThenFour {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto 35px;
+}
+
+.grid-container.moreThenNine {
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-item:nth-child(1) {
+    background: #555c7c;
+}
+
+.grid-item:nth-child(2) {
+    background: #9ed600;
+}
+
+.grid-item:nth-child(3) {
+    background: #ca7c99;
+}
+
+.grid-item:nth-child(4) {
+    background: #76cae7;
+}
+
+.grid-item:nth-child(5) {
+    background: #ea481c;
+}
+
+.grid-item:nth-child(6) {
+    background: #004fd3;
+}
+
+.grid-item:nth-child(7) {
+    background: #004fd3;
+}
+
+.grid-item:nth-child(8) {
+    background: #ff32ab;
+}
+
+.disableBtn {
+    background-color: #ccc;
+    pointer-events: none;
+    cursor: not-allowed;
+}

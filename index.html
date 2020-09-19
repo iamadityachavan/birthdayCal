@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Birthday Calender Card</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <section id="birthdayCard">
+        <h1>Birthday Cal</h1>
+        <div class="row">
+            <div class="column day1">
+                <div class="daysOfWeek">Mon</div>
+                <div class="grid-container">
+                    <div class="emptySymbol">
+                        <span>&#8226;</span>&ensp;<span>&#8226;</span><br><span>&#126;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column day2">
+                <div class="daysOfWeek">Tue</div>
+                <div class="grid-container">
+                    <div class="emptySymbol">
+                        <span>&#8226;</span>&ensp;<span>&#8226;</span><br><span>&#126;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column day3">
+                <div class="daysOfWeek">Wed</div>
+                <div class="grid-container">
+                    <div class="emptySymbol">
+                        <span>&#8226;</span>&ensp;<span>&#8226;</span><br><span>&#126;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column day4">
+                <div class="daysOfWeek">Thus</div>
+                <div class="grid-container">
+                    <div class="emptySymbol">
+                        <span>&#8226;</span>&ensp;<span>&#8226;</span><br><span>&#126;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column day5">
+                <div class="daysOfWeek">Fri</div>
+                <div class="grid-container">
+                    <div class="emptySymbol">
+                        <span>&#8226;</span>&ensp;<span>&#8226;</span><br><span>&#126;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column day6">
+                <div class="daysOfWeek">Sat</div>
+                <div class="grid-container">
+                    <div class="emptySymbol">
+                        <span>&#8226;</span>&ensp;<span>&#8226;</span><br><span>&#126;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column day0">
+                <div class="daysOfWeek">Sun</div>
+                <div class="grid-container">
+                    <div class="emptySymbol">
+                        <span>&#8226;</span>&ensp;<span>&#8226;</span><br><span>&#126;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="userInputSection">
+            <div class="userInputDataSection">
+                <textarea id="jsonInputData" name="jsonInputData" rows="15" cols="80"></textarea>
+            </div>
+            <div class="userImportDataSection">
+                <form>
+                    <label for="birthYear">Year</label><br>
+                    <input type="number" onkeypress="document.getElementById('updateBtn').classList.remove('disableBtn');" id="birthYear" name="birthYear">
+                    <br>
+                    <button type="button" id="updateBtn" onclick="updateCalender(true)">Update</button><br>
+                    <button type="button" onclick="updateCalender(false)">Import All data</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
